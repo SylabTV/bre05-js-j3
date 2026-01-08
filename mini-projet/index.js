@@ -45,7 +45,9 @@ boxes[2].style.backgroundColor = "#efec4f";
 boxes[3].style.backgroundColor = "#4cee7e";
 boxes[4].style.backgroundColor = "#427cf5";
 boxes[5].style.backgroundColor = "#956caf";
-
+for (i=6; i<9; i++){
+    boxes[i].style.backgroundColor = "white";
+}
 }
 
 function grid4()
@@ -64,16 +66,17 @@ function grid5()
 let grid = grids[4];
 let boxes = grid.querySelectorAll("div");
 
-boxes[0].style.backgroundColor = "blue";
-boxes[1].style.backgroundColor = "blue";
-boxes[2].style.backgroundColor = "blue";
-boxes[3].style.backgroundColor = "violet";
+for (i=0; i<3; i++){
+    boxes[i].style.backgroundColor = "blue";
+}
+for (i=3; i<6; i++){
+    boxes[i].style.backgroundColor = "violet";
+}
+for (i=6; i<9; i++){
+    boxes[i].style.backgroundColor = "orange";
+}
 boxes[4].style.backgroundColor = "red";
-boxes[5].style.backgroundColor = "violet";
-boxes[6].style.backgroundColor = "orange";
 boxes[7].style.backgroundColor = "yellow";
-boxes[8].style.backgroundColor = "orange";
-
 }
 
 function grid6()
