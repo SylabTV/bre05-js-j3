@@ -25,19 +25,15 @@ function grid2()
 {let grids = document.querySelectorAll(".grid");
 let grid = grids[1];
 let boxes = grid.querySelectorAll("div");
-
-boxes[0].style.backgroundColor = "#4cee7e";
-boxes[1].style.backgroundColor = "#efec4f";
-boxes[2].style.backgroundColor = "#4cee7e";
-boxes[3].style.backgroundColor = "#efec4f";
-boxes[4].style.backgroundColor = "#4cee7e";
-boxes[5].style.backgroundColor = "#efec4f";
-boxes[6].style.backgroundColor = "#4cee7e";
-boxes[7].style.backgroundColor = "#efec4f";
-boxes[8].style.backgroundColor = "#4cee7e";
-
+for (i=0; i<9; i++){
+    if (i%2==0){
+        boxes[i].style.backgroundColor = "#4cee7e";
+    }
+    if (i%2!=0){
+        boxes[i].style.backgroundColor = "#efec4f";
+    }
 }
-
+}
 function grid3()
 {let grids = document.querySelectorAll(".grid");
 let grid = grids[2];
@@ -57,15 +53,10 @@ function grid4()
 let grid = grids[3];
 let boxes = grid.querySelectorAll("div");
 
-boxes[0].style.backgroundColor = "black";
-boxes[1].style.backgroundColor = "#000000ff";
-boxes[2].style.backgroundColor = "#000000ff";
-boxes[3].style.backgroundColor = "#000000ff";
-boxes[4].style.backgroundColor = "#00ff37ff";
-boxes[5].style.backgroundColor = "#000000ff";
-boxes[6].style.backgroundColor = "#000000ff";
-boxes[7].style.backgroundColor = "#000000ff";
-boxes[8].style.backgroundColor = "#000000ff";
+for (let box of boxes) {
+    box.style.backgroundColor = "black";
+}
+boxes[4].style.backgroundColor = "green";
 }
 
 function grid5()

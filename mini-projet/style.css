@@ -1,6 +1,8 @@
 body {
     display: grid;
     grid-template-rows: 10vh minmax(90vh, max-content);
+    justify-items: center;
+    background-color:gray;
 
     main {
         display: grid;
